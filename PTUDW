@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Layout</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    .navbar {
+      background-color: #d6fa09;
+      padding: 0.5rem 1rem; 
+    }
+    .sidebar {
+      background-color: #f8d7da;
+    }
+    .main-content {
+      background-color: #cce5ff; 
+    }
+    .footer {
+      background-color: #09fa41; 
+      padding: 1rem 0; 
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">NavBar</span>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row flex-nowrap">
+    <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 sidebar">
+      <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+        <p class="d-none d-sm-inline">Sidebar</p>
+      </div>
+    </div>
+    
+    <div class="col py-3 main-content">
+      <h2>Main Content</h2>
+      <p>hehe</p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">hehe</span>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
